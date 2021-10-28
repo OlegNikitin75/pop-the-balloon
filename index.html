@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pop The Balloon</title>
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="popup">
+      <h2 class="popup__title"></h2>
+      <div class="popup__statistic statistic__box">
+        <h2 class="popup__score-title title">Your score:</h2>
+        <span class="popup__score-num num">0</span>
+      </div>
+    </div>
+    <div class="popup-reg">
+      <h1 class="game__title">Pop the balloon</h1>
+      <h2 class="popup-reg__title popup__title">Registration</h2>
+      <form class="form-reg" action="">
+        <input class="form-reg__input" type="text" placeholder="Your Name" required>
+        <button class="form-reg__btn btn">register</button>
+        <button class="form-reg__btn-noreg btn">play without registration</button>
+      </form>
+    </div>
+    <div class="game__inner">
+      <div class="buttons">
+        <h2 class="buttons-title title">Level</h2>
+        <button class="btn-level btn btn--active" id="easy" data-elem="02">easy</button>
+        <button class="btn-level btn" id="medium" data-elem="02">medium</button>
+        <button class="btn-level btn" id="hard" data-elem="02">hard</button>
+        <button class="btn-result btn" id="result" data-elem="02">your result</button>
+        <button class="btn-music btn" id="music" data-elem="03">music</button>
+        <button class="btn-start btn" data-elem="02">Start</button>
+      </div>
+      <div class="game__board">
+        <div class="game__item game__item-one">
+          <div class="game__item-center" data-elem="01"></div>
+        </div>
+        <div class="game__item game__item-two">
+          <div class="game__item-center" data-elem="01"></div>
+        </div>
+        <div class="game__item game__item-three">
+          <div class="game__item-center" data-elem="01"></div>
+        </div>
+        <div class="game__item game__item-four">
+          <div class="game__item-center" data-elem="01"></div>
+        </div>
+        <div class="game__item game__item-five">
+          <div class="game__item-center" data-elem="01"></div>
+        </div>
+        <div class="game__item game__item-six">
+          <div class="game__item-center" data-elem="01"></div>
+        </div>
+        <div class="game__item game__item-seven">
+          <div class="game__item-center" data-elem="01"></div>
+        </div>
+        <div class="game__item game__item-eight">
+          <div class="game__item-center" data-elem="01"></div>
+        </div>
+        <div class="game__item game__item-nine">
+          <div class="game__item-center" data-elem="01"></div>
+        </div>
+      </div>
+      <div class="statistic">
+
+        <div class="statistic__name statistic__box">
+          <h2 class="statistic__name-title title">Hello</h2>
+          <span class="statistic__name-gamer num">stranger</span>
+        </div>
+        <div class="statistic__score statistic__box">
+          <h2 class="statistic__score-title title">Score:</h2>
+          <span class="statistic__score-num num"></span>
+        </div>
+        <div class="statistic__timer statistic__box">
+          <h2 class="statistic__time-title title">Time:</h2>
+          <span class="statistic__time-num num" id="timer"></span>
+        </div>
+        <button class="muted"></button>
+      </div>
+    </div>
+    <audio src="./assets/sounds/boom.wav" data-elem="01"></audio>
+    <audio src="./assets/sounds/knopka-klik-zvonkii-myagkaya.wav" data-elem="02"></audio>
+    <audio src="./assets/sounds/music.mp3" id="audio" data-elem="03"></audio>
+    <audio src="./assets/sounds/salyut.wav" data-elem="04"></audio>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
